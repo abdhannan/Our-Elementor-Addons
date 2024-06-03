@@ -1,0 +1,100 @@
+.aela-phone-field {
+    display: block;
+    width: 100%;
+}
+.aela-phone-field__container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: relative;
+}
+.aela-phone-field .aela-phone-field__phone-code {
+    display: none;
+}
+.aela-phone-field .select2 {
+    width: 50px !important;
+    position: absolute;
+    left: 16px;
+}
+.aela-phone-field .select2 .select2-selection {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border: none;
+    background-color: transparent;
+}
+.aela-phone-field .select2 .select2-selection .select2-selection__rendered {
+    padding-left: 0;
+    padding-right: 8px;
+}
+.aela-phone-field .select2 .select2-selection .select2-selection__arrow {
+    width: 16px;
+}
+.aela-phone-field .select2 .select2-selection .select2-selection__arrow b {
+    border-width: 6px 5px 0 5px;
+    border-color: var(--text-color) transparent transparent transparent;
+}
+
+.aela-phone-field__selected {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.aela-phone-field__selected .aela-phone-field__selected--icon {
+    width: 28px;
+}
+
+.aela-phone-field input {
+    padding-left: 76px;
+}
+
+/** Dropdown **/
+.aela-phone-field .select2-container:not(.select2) {
+    top: 100% !important;
+    left: 0 !important;
+}
+.aela-phone-field .aela-phone-field__dropdown {
+    width: 360px !important;
+    padding: 0;
+}
+.aela-phone-field .aela-phone-field__dropdown .select2-search {
+    display: block !important;
+    padding: 16px;
+}
+.aela-phone-field .aela-phone-field__dropdown .select2-search .select2-search__field {
+    background-color: var(--background-color);
+    border: 1px solid var(--stroke-color);
+    padding: 8px;
+    border-radius: 4px;
+}
+.aela-phone-field .aela-phone-field__dropdown .select2-results__options .select2-results__option {
+    padding: 16px;
+    border-bottom: 1px solid var(--stroke-color);
+    display: block;
+}
+.aela-phone-field .aela-phone-field__dropdown .select2-results__options .select2-results__option:last-child {
+    border-bottom: 0;
+}
+.aela-phone-field .aela-phone-field__dropdown .select2-results__options .select2-results__option.select2-results__option--selected {
+    background-color: var(--background-color);
+}
+.aela-phone-field .aela-phone-field__dropdown .select2-results__options .select2-results__option.select2-results__option--selected .aela-phone-field__option--text {
+    color: var(--text-color);
+}
+.aela-phone-field .aela-phone-field__dropdown .select2-results__options .aela-phone-field__option .aela-phone-field__option--icon {
+    width: 28px;
+    border: 1px solid var(--stroke-color);
+}
+.aela-phone-field .aela-phone-field__dropdown .select2-search .select2-search__field:focus {
+    outline: none;
+}
+
+@media only screen and (max-width: 767px) {
+    .aela-phone-field .select2-container:not(.select2) {
+        width: 100%;;
+    }
+    .aela-phone-field .aela-phone-field__dropdown {
+        width: 100% !important;
+        padding: 0;
+    }
+}

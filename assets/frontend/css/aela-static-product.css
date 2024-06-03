@@ -1,0 +1,31 @@
+.aela_static_product_ribbon {
+  width: fit-content;
+  background: red;
+  padding: 8px 20px;
+  position: absolute;
+  text-align: center;
+  right: 0;
+}
+
+.content_wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.normal_price {
+  text-decoration: line-through;
+}
+
+.aela_static_product_button {
+  padding: 8px 15px;
+  background-color: rgb(211, 207, 207);
+}
+
+.special_price > span:first-child {
+  text-decoration: line-through;
+}
+
+.aela_static_product_button {
+  width: fit-content;
+  display: flex;
+}

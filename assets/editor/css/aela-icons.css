@@ -1,0 +1,14 @@
+#elementor-panel .aela-icon {
+    display: block;
+}
+#elementor-panel .aela-icon::before {
+    content: "";
+    display: block;
+    width: 1em;
+    height: 1em;
+    margin: 0 auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url('../../images/icon.png');
+}
