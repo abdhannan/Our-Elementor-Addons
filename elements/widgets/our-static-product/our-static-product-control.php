@@ -690,6 +690,24 @@ class Our_Static_Product_Control extends \AELA\Elements\Widgets\Our_Static_Produ
                 ]
             );
 
+            /**
+             * normal price text strike
+             * 
+             * @link https://developers.elementor.com/docs/editor-controls/control-switcher/
+             * @return swicther
+             */
+            $this->add_control(
+                'normal_price_linethrough',
+                [
+                    'label' => esc_html__( 'Line Through?', AELA_SLUG ),
+                    'type' => \Elementor\Controls_Manager::SWITCHER,
+                    'label_on' => esc_html__( 'Yes', AELA_SLUG ),
+                    'label_off' => esc_html__( 'No', AELA_SLUG ),
+                    'return_value' => 'yes',
+                    'default' => 'yes',
+                ]
+            );
+
 
             $this->end_controls_tab();
             // end control tab for normal price
