@@ -1,8 +1,8 @@
 <?php
 
-namespace AELA\Elements\Widgets\Aela_Static_Product;
+namespace AELA\Elements\Widgets\Our_Static_Product;
 
-class Aela_Static_Product_Control extends \AELA\Elements\Widgets\Aela_Static_Product\Aela_Static_Product {
+class Our_Static_Product_Control extends \AELA\Elements\Widgets\Our_Static_Product\Our_Static_Product {
     
     public function register_content_controls() {
         /**

@@ -14,12 +14,12 @@ $config = [
             ]
         ],
         'aela-static-product' => [
-            'class' => '\AELA\Elements\Widgets\Aela_Static_Product\Aela_Static_Product',
+            'class' => '\AELA\Elements\Widgets\Our_Static_Product\Our_Static_Product',
             'dependency' => [
                 'css' => [
                     [
-                        'handle' => 'aela-static-product-css', 
-                        'file' => AELA_URL . "assets/frontend/css/aela-static-product.css"
+                        'handle' => 'our-static-product-css', 
+                        'file' => AELA_URL . "assets/frontend/css/our-static-product.css"
                     ]
                 ]
             ]

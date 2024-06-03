@@ -1,8 +1,8 @@
 <?php
 
-namespace AELA\Elements\Widgets\Aela_Static_Product;
+namespace AELA\Elements\Widgets\Our_Static_Product;
 
-class Aela_Static_Product extends \AELA\Classes\Widget_Base {
+class Our_Static_Product extends \AELA\Classes\Widget_Base {
     public function get_name() {
 		return 'aela-static-product';
 	}
@@ -20,11 +20,11 @@ class Aela_Static_Product extends \AELA\Classes\Widget_Base {
 	}
 
 	public function get_style_depends() {
-		return [ 'aela-static-product-css' ];
+		return [ 'our-static-product-css' ];
 	}
 
     protected function register_controls() {
-        $element_control = new Aela_Static_Product_Control();
+        $element_control = new Our_Static_Product_Control();
         $element_control->register_content_controls();
         $element_control->register_style_controls();
 	}
