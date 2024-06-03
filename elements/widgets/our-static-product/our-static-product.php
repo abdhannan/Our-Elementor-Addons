@@ -64,7 +64,7 @@ class Our_Static_Product extends \AELA\Classes\Widget_Base {
                 <?php echo $settings['product_title'] ?>
             </h3>
             <div class="product_price">
-                <span class="normal_price"><?php echo $settings['product_normal_price']; ?></span>
+                <span class="normal_price <?php if('yes' === $settings['normal_price_linethrough']) echo 'linethrough'; ?>"><?php echo $settings['product_normal_price']; ?></span>
                 <span class="special_price"><?php echo $settings['product_special_price']; ?></span>
             </div>
             <p class="aela_static_product_desc">
