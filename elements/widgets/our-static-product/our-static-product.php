@@ -44,10 +44,13 @@ class Our_Static_Product extends \AELA\Classes\Widget_Base {
         </div>
         <?php endif; ?>
         <?php
+
+        $imgStyle = $settings['custom_dimension'];
+        var_dump($imgStyle['width']);
          
 
 		// Get image URL
-		echo '<img src="' . $settings['product_image']['url'] . '">';
+		echo '<img src="' . $settings['product_image']['url'] . '" width="'. $imgStyle['width'] .'" height="' . $imgStyle['height'] .'">';
 
 		// Get image 'thumbnail' by ID
 		// echo wp_get_attachment_image( $settings['image']['id'], 'thumbnail' );

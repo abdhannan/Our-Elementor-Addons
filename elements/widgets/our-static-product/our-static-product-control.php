@@ -539,10 +539,32 @@ class Our_Static_Product_Control extends \AELA\Elements\Widgets\Our_Static_Produ
         );
 
 
-        
+        $this->end_controls_section();
 
 
-        
+        /**
+         * style image for static product
+         */
+        $this->start_controls_section(
+            'style_image',
+            [
+                'label' => esc_html__('Image', AELA_SLUG),
+                'tab' => \Elementor\Controls_Manager::TAB_STYLE,
+            ]
+        );
+
+        $this->add_control(
+			'custom_dimension',
+			[
+				'label' => esc_html__( 'Image Dimension', 'textdomain' ),
+				'type' => \Elementor\Controls_Manager::IMAGE_DIMENSIONS,
+				'description' => esc_html__( 'Crop the original image size to any custom size. Set custom width or height to keep the original size ratio.', 'textdomain' ),
+				'default' => [
+					'width' => '',
+					'height' => '',
+				],
+			]
+		);
 
         $this->end_controls_section();
        
