@@ -554,7 +554,7 @@ class Our_Static_Product_Control extends \AELA\Elements\Widgets\Our_Static_Produ
         );
 
         $this->add_control(
-			'custom_dimension',
+			'custom_image_dimension',
 			[
 				'label' => esc_html__( 'Image Dimension', 'textdomain' ),
 				'type' => \Elementor\Controls_Manager::IMAGE_DIMENSIONS,
